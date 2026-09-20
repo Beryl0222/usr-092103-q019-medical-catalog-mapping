@@ -1,0 +1,9 @@
+{
+  "event_id": "092103-019-sample-001",
+  "event_type": "CATALOG_PUBLISHED",
+  "aggregate_type": "catalog_revision",
+  "aggregate_id": "medical_catalog_mapping-001",
+  "occurred_at": "2026-09-20T16:00:00+08:00",
+  "version": 1,
+  "summary": "医保项目目录映射联调样例"
+}
