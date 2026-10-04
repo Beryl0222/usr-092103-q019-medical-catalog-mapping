@@ -20,10 +20,18 @@
       "type": "string",
       "enum": [
         "CATALOG_PUBLISHED",
+        "ITEM_DEFINED",
+        "CANDIDATE_GENERATED",
         "MAPPING_PROPOSED",
+        "OPINION_RECORDED",
+        "SPLIT_VALIDATED",
         "MAPPING_REVIEWED",
+        "BATCH_RELEASED",
+        "OBJECTION_RAISED",
+        "OBJECTION_RESOLVED",
+        "CORRECTION_RELEASED",
         "SNAPSHOT_FROZEN",
-        "CORRECTION_RELEASED"
+        "BILL_EXPLAINED"
       ]
     },
     "aggregate_type": {
@@ -31,8 +39,14 @@
       "enum": [
         "catalog_revision",
         "service_item",
+        "mapping_candidate",
         "mapping_claim",
-        "settlement_snapshot"
+        "expert_opinion",
+        "split_validation",
+        "objection",
+        "release_batch",
+        "settlement_snapshot",
+        "bill_explanation"
       ]
     },
     "aggregate_id": {
@@ -45,12 +59,73 @@
     },
     "version": {
       "type": "integer",
-      "minimum": 1
+      "minimum": 1,
+      "description": "事件所涉对象的版本号；同一对象版本可对应多个事件"
     },
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object",
+      "description": "事件载荷，字段约定见 docs/events.md；取值枚举见 $defs"
     }
   },
-  "additionalProperties": true
+  "additionalProperties": true,
+  "$defs": {
+    "catalog_scope": {
+      "type": "string",
+      "title": "目录范围",
+      "enum": ["national", "provincial"],
+      "description": "national=国家目录，provincial=地方目录"
+    },
+    "mapping_result_kind": {
+      "type": "string",
+      "title": "映射结果类别",
+      "enum": ["one_to_one", "one_to_many", "many_to_one", "unmappable"],
+      "description": "一对一、一对多、多对一、不可映射，均为审核后的正式结果"
+    },
+    "claim_status": {
+      "type": "string",
+      "title": "映射主张状态",
+      "enum": ["proposed", "approved", "rejected"],
+      "description": "仅 approved 版本可进入结算"
+    },
+    "similarity_basis": {
+      "type": "string",
+      "title": "相似依据",
+      "enum": ["name_similarity", "unit_consistency", "boundary_overlap"],
+      "description": "自动候选仅展示相似依据：名称相似、计价单位一致、服务边界重叠"
+    },
+    "combo_category": {
+      "type": "string",
+      "title": "组合类别",
+      "enum": ["nursing", "scale", "anesthesia"],
+      "description": "须做重复计费边界校验的组合：护理、量表、麻醉；新类别经登记后扩展"
+    },
+    "split_check_result": {
+      "type": "string",
+      "title": "拆分校验结果",
+      "enum": ["no_overlap", "overlap_detected"],
+      "description": "no_overlap=边界无重叠；overlap_detected=存在重复计费风险"
+    },
+    "objection_resolution": {
+      "type": "string",
+      "title": "异议处理结果",
+      "enum": ["adopted", "rejected"],
+      "description": "adopted=采纳并转入更正批次；rejected=驳回；均须记录理由"
+    },
+    "explanation_outcome": {
+      "type": "string",
+      "title": "解释结果",
+      "enum": ["explained", "missing_conditions", "unmappable"],
+      "description": "explained=已解释；missing_conditions=缺少支付条件；unmappable=正式不可映射"
+    },
+    "batch_kind": {
+      "type": "string",
+      "title": "批次类别",
+      "enum": ["regular", "correction"],
+      "description": "regular=常规发布批次；correction=更正批次，不改动已冻结快照"
+    }
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "event_id": "evt-2026-0925-001",
+  "event_type": "OBJECTION_RESOLVED",
+  "aggregate_type": "objection",
+  "aggregate_id": "obj-0001",
+  "occurred_at": "2026-09-25T10:00:00+08:00",
+  "version": 1,
+  "summary": "异议采纳：护理组件边界需收窄，转入更正批次",
+  "payload": {
+    "resolution": "adopted",
+    "rationale": "证据显示护理组件边界确与护理量表评估重叠，采纳并收窄其服务边界",
+    "resolved_by": "国家目录映射发布方"
+  }
+}

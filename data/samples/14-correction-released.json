@@ -1,0 +1,16 @@
+{
+  "event_id": "evt-2026-1001-001",
+  "event_type": "CORRECTION_RELEASED",
+  "aggregate_type": "release_batch",
+  "aggregate_id": "batch-2026-10-corr",
+  "occurred_at": "2026-10-01T09:00:00+08:00",
+  "version": 1,
+  "summary": "更正批次：发布 claim-0001 第三版，不影响已冻结快照",
+  "payload": {
+    "batch_kind": "correction",
+    "corrects_refs": ["claim-0001@v2"],
+    "released_refs": ["claim-0001@v3"],
+    "source_objection_refs": ["obj-0001@v1"],
+    "note": "已冻结的结算快照继续按原版本解释"
+  }
+}

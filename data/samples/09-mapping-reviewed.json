@@ -1,0 +1,16 @@
+{
+  "event_id": "evt-2026-0901-001",
+  "event_type": "MAPPING_REVIEWED",
+  "aggregate_type": "mapping_claim",
+  "aggregate_id": "claim-0001",
+  "occurred_at": "2026-09-01T09:30:00+08:00",
+  "version": 2,
+  "summary": "映射主张审核通过，正式结果为一对多",
+  "payload": {
+    "status": "approved",
+    "result_kind": "one_to_many",
+    "opinion_refs": ["op-0001@v1"],
+    "split_validation_refs": ["split-0001@v1"],
+    "reviewer": "国家目录映射审核组"
+  }
+}

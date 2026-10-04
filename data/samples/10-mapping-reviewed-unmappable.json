@@ -1,0 +1,16 @@
+{
+  "event_id": "evt-2026-0901-002",
+  "event_type": "MAPPING_REVIEWED",
+  "aggregate_type": "mapping_claim",
+  "aggregate_id": "claim-0002",
+  "occurred_at": "2026-09-01T09:45:00+08:00",
+  "version": 1,
+  "summary": "地方特色疗法无对应国家项目，正式结果为不可映射",
+  "payload": {
+    "status": "approved",
+    "result_kind": "unmappable",
+    "local_item_ref": "zj-item-folk-0007@v1",
+    "reviewer": "国家目录映射审核组",
+    "rationale": "国家目录中无服务边界相当的项目，按不可映射结清"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "event_id": "evt-2026-0621-001",
+  "event_type": "BILL_EXPLAINED",
+  "aggregate_type": "bill_explanation",
+  "aggregate_id": "expl-0001",
+  "occurred_at": "2026-06-21T11:00:00+08:00",
+  "version": 1,
+  "summary": "政策生效前的费用按当时版本解释：套餐拆至检查与护理",
+  "payload": {
+    "fee_line_ref": "fee-0001",
+    "service_date": "2026-06-15",
+    "snapshot_ref": "snap-0001@v1",
+    "outcome": "explained",
+    "local_item_ref": "zj-item-bundle-0001@v1",
+    "national_item_refs": ["nat-item-exam-0001@v2", "nat-item-nurse-0002@v1"],
+    "claim_ref": "claim-0001@v1",
+    "catalog_refs": ["nat-catalog@v4", "zj-catalog@v12"],
+    "review_refs": ["evt-2026-0320-001"]
+  }
+}

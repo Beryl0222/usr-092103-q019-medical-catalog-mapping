@@ -1,0 +1,15 @@
+{
+  "event_id": "evt-2026-0910-001",
+  "event_type": "OBJECTION_RAISED",
+  "aggregate_type": "objection",
+  "aggregate_id": "obj-0001",
+  "occurred_at": "2026-09-10T15:00:00+08:00",
+  "version": 1,
+  "summary": "省级异议：护理组件边界与护理量表评估重叠",
+  "payload": {
+    "subject_ref": "claim-0001@v2",
+    "raised_by": "浙江省医保局目录管理处",
+    "claim": "护理组件服务边界在本省与“护理量表评估”项目重叠，存在重复计费风险",
+    "evidence_refs": ["zj-doc-2026-临床路径-17"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "event_id": "evt-2026-0510-001",
+  "event_type": "CATALOG_PUBLISHED",
+  "aggregate_type": "catalog_revision",
+  "aggregate_id": "nat-catalog",
+  "occurred_at": "2026-05-10T09:00:00+08:00",
+  "version": 5,
+  "summary": "国家目录第五版发布，2026-07-01 起生效",
+  "payload": {
+    "scope": "national",
+    "effective_from": "2026-07-01",
+    "effective_regions": ["全国"],
+    "supersedes": "nat-catalog@v4"
+  }
+}

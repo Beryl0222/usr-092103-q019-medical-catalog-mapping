@@ -1,0 +1,13 @@
+{
+  "event_id": "evt-2026-0905-001",
+  "event_type": "BATCH_RELEASED",
+  "aggregate_type": "release_batch",
+  "aggregate_id": "batch-2026-09",
+  "occurred_at": "2026-09-05T10:00:00+08:00",
+  "version": 1,
+  "summary": "常规批次 2026-09 发布审核通过的映射版本",
+  "payload": {
+    "batch_kind": "regular",
+    "released_refs": ["claim-0001@v2", "claim-0002@v1"]
+  }
+}

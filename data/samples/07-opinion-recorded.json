@@ -1,0 +1,15 @@
+{
+  "event_id": "evt-2026-0820-001",
+  "event_type": "OPINION_RECORDED",
+  "aggregate_type": "expert_opinion",
+  "aggregate_id": "op-0001",
+  "occurred_at": "2026-08-20T11:00:00+08:00",
+  "version": 1,
+  "summary": "专家意见：支持一对多拆分，建议校验护理边界",
+  "payload": {
+    "subject_ref": "claim-0001@v2",
+    "expert": "临床路径专家组",
+    "conclusion": "支持一对多拆分",
+    "rationale": "检查与护理在国家目录中服务边界清晰，拆分后需确认护理部分不与护理量表评估重复"
+  }
+}

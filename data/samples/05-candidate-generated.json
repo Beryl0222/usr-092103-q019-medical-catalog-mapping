@@ -1,0 +1,19 @@
+{
+  "event_id": "evt-2026-0801-001",
+  "event_type": "CANDIDATE_GENERATED",
+  "aggregate_type": "mapping_candidate",
+  "aggregate_id": "cand-0001",
+  "occurred_at": "2026-08-01T10:00:00+08:00",
+  "version": 1,
+  "summary": "地方套餐“检查加护理”对国家项目的自动候选（仅相似依据）",
+  "payload": {
+    "local_item_ref": "zj-item-bundle-0001@v1",
+    "national_item_refs": ["nat-item-exam-0001@v3", "nat-item-nurse-0002@v2"],
+    "evidence": [
+      {"basis": "name_similarity", "score": 0.86, "detail": "名称均含“检查”与“护理”"},
+      {"basis": "unit_consistency", "score": 0.5, "detail": "地方按“次”计价，国家项目分别按“部位”“床日”计价"},
+      {"basis": "boundary_overlap", "score": 0.9, "detail": "服务边界同时覆盖检查与护理两部分"}
+    ],
+    "note": "仅展示相似依据，未审核前不得进入结算"
+  }
+}

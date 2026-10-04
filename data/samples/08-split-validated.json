@@ -1,0 +1,15 @@
+{
+  "event_id": "evt-2026-0825-001",
+  "event_type": "SPLIT_VALIDATED",
+  "aggregate_type": "split_validation",
+  "aggregate_id": "split-0001",
+  "occurred_at": "2026-08-25T16:00:00+08:00",
+  "version": 1,
+  "summary": "护理组合拆分重复计费边界校验通过",
+  "payload": {
+    "claim_ref": "claim-0001@v2",
+    "combo_category": "nursing",
+    "result": "no_overlap",
+    "boundary_notes": "护理组件边界限定为基础生活护理，与护理量表评估项目不重叠"
+  }
+}

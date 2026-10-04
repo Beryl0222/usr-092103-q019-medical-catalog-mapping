@@ -1,0 +1,19 @@
+{
+  "event_id": "evt-2026-0810-001",
+  "event_type": "MAPPING_PROPOSED",
+  "aggregate_type": "mapping_claim",
+  "aggregate_id": "claim-0001",
+  "occurred_at": "2026-08-10T14:00:00+08:00",
+  "version": 2,
+  "summary": "主张：地方套餐一对多拆分为国家检查与护理两个项目",
+  "payload": {
+    "local_item_ref": "zj-item-bundle-0001@v1",
+    "result_kind": "one_to_many",
+    "components": [
+      {"national_item_ref": "nat-item-exam-0001@v3", "share_note": "套餐中检查部分，按部位计价"},
+      {"national_item_ref": "nat-item-nurse-0002@v2", "share_note": "套餐中护理部分，按床日计价"}
+    ],
+    "candidate_refs": ["cand-0001@v1"],
+    "status": "proposed"
+  }
+}

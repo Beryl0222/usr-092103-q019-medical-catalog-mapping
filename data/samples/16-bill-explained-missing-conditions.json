@@ -1,0 +1,20 @@
+{
+  "event_id": "evt-2026-1021-001",
+  "event_type": "BILL_EXPLAINED",
+  "aggregate_type": "bill_explanation",
+  "aggregate_id": "expl-0002",
+  "occurred_at": "2026-10-21T09:00:00+08:00",
+  "version": 1,
+  "summary": "提交前检查：草稿费用缺少支付条件，退回补正",
+  "payload": {
+    "fee_line_ref": "draft-fee-0002",
+    "service_date": "2026-10-19",
+    "snapshot_ref": "snap-0002@v1",
+    "outcome": "missing_conditions",
+    "local_item_ref": "zj-item-bundle-0001@v1",
+    "national_item_refs": ["nat-item-exam-0001@v3", "nat-item-nurse-0002@v2"],
+    "claim_ref": "claim-0001@v3",
+    "catalog_refs": ["nat-catalog@v5", "zj-catalog@v12"],
+    "missing_conditions": ["医嘱记录编号"]
+  }
+}

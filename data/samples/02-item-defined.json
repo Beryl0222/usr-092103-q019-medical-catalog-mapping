@@ -1,0 +1,18 @@
+{
+  "event_id": "evt-2026-0510-002",
+  "event_type": "ITEM_DEFINED",
+  "aggregate_type": "service_item",
+  "aggregate_id": "nat-item-nurse-0002",
+  "occurred_at": "2026-05-10T09:05:00+08:00",
+  "version": 2,
+  "summary": "国家项目“Ⅱ级护理”第二版定义",
+  "payload": {
+    "catalog_ref": "nat-catalog@v5",
+    "item_code": "N-1204-0002",
+    "name": "Ⅱ级护理",
+    "definition": "住院期间每床日基础生活护理与病情观察",
+    "unit": "床日",
+    "service_boundary": "不含专项护理操作与护理量表评估",
+    "payment_conditions": ["限住院使用", "需医嘱记录编号"]
+  }
+}

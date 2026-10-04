@@ -1,0 +1,14 @@
+{
+  "event_id": "evt-2026-0620-001",
+  "event_type": "SNAPSHOT_FROZEN",
+  "aggregate_type": "settlement_snapshot",
+  "aggregate_id": "snap-0001",
+  "occurred_at": "2026-06-20T08:30:00+08:00",
+  "version": 1,
+  "summary": "跨省请求 req-0001 冻结所用目录与映射版本",
+  "payload": {
+    "request_id": "req-0001",
+    "frozen_catalogs": ["nat-catalog@v4", "zj-catalog@v12"],
+    "frozen_claims": ["claim-0001@v1"]
+  }
+}
